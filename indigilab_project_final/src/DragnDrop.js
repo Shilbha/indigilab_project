@@ -3,15 +3,6 @@ import React, {useEffect, useState} from 'react'
 import {useDropzone} from 'react-dropzone'
 import Converter from './Converter'
 import cloud from './cloud.png'
-import {
-  ref,
-  uploadBytes,
-  getDownloadURL,
-  listAll,
-  list,
-} from "firebase/storage";
-import { storage } from "./firebase";
-import { v4 } from "uuid";
 
 function DragnDrop() {
     const[files,setFiles]=useState([])
